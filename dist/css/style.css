@@ -115,19 +115,22 @@ h6, .h6 {
 }
 
 .header__container .header__buttons button {
-  color: #000;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: -0.36px;
   border: none;
+}
+
+.header__container .header__buttons .light-button {
+  color: #000;
   width: 104px;
   height: 56px;
   background-color: #fff;
 }
 
-.header__container .header__buttons button:hover {
+.header__container .header__buttons .light-button:hover {
   border-radius: 28px;
   background-color: #ffdda9;
 }
@@ -146,6 +149,27 @@ h6, .h6 {
   height: 56px;
   color: #000;
   border: 2px solid #ffdda9;
+  background-color: #ffdda9;
+}
+
+.header__container .header__buttons .light-border-button {
+  color: #fff;
+  width: 96px;
+  height: 56px;
+  color: #fff;
+  border-radius: 28px;
+  background-color: #391484;
+}
+
+.header__container .header__buttons .light-border-button:hover {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: #391484;
+}
+
+.header__container .header__buttons .try-button {
+  width: 126px;
+  height: 56px;
+  border-radius: 28px;
   background-color: #ffdda9;
 }
 

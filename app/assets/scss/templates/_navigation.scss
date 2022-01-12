@@ -40,13 +40,15 @@
     display: flex;
     gap: 30px;
     button {
-      color: $black;
       font-family: $font-primary;
       font-size: $h6;
       font-weight: 700;
       line-height: 26px;
       letter-spacing: -0.36px;
       border: none;
+    }
+    .light-button {
+      color: $black;
       width: 104px;
       height: 56px;
       background-color: $white;
@@ -55,20 +57,38 @@
         background-color: $color-primary;
       }
     }
-    .dark-button{
-        width: 96px;
+    .dark-button {
+      width: 96px;
+      height: 56px;
+      color: $white;
+      border-radius: 28px;
+      background-color: $color-dark;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      &:hover {
+        width: 104px;
         height: 56px;
-        color: $white;
-        border-radius: 28px;
-        background-color: $color-dark;
+        color: $black;
+        border: 2px solid $color-primary;
+        background-color: $color-primary;
+      }
+    }
+    .light-border-button {
+      color: $white;
+      width: 96px;
+      height: 56px;
+      color: $white;
+      border-radius: 28px;
+      background-color: $color-dark;
+      &:hover {
         border: 2px solid rgba(255, 255, 255, 0.1);
-        &:hover{
-            width: 104px;
-            height: 56px;
-            color: $black;
-            border: 2px solid $color-primary;
-            background-color: $color-primary;
-        }
+        background-color: $color-dark;
+      }
+    }
+    .try-button{
+        width: 126px;
+        height: 56px;
+        border-radius: 28px;
+        background-color: $color-primary;
     }
   }
 }
@@ -83,4 +103,3 @@
     }
   }
 }
-
