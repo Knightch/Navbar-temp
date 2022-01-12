@@ -16,9 +16,13 @@
   }
   .header__list {
     align-self: center;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
     margin-top: 20px;
     ul {
       display: flex;
+      align-self: center;
       flex-direction: row;
       justify-content: space-between;
       list-style: none;
@@ -32,6 +36,30 @@
           line-height: 26px;
           letter-spacing: -0.36px;
         }
+      }
+    }
+    .button-list {
+      align-self: flex-start;
+      .light-border-button {
+        width: 117px;
+        height: 56px;
+        margin-bottom: 12px;
+        color: $white;
+        background-color: $color-dark;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-radius: 28px;
+      }
+      .light-search-button {
+          img{
+              margin-right: 19px;
+          }
+        width: 136px;
+        height: 56px;
+        margin-bottom: 12px;
+        color: $white;
+        background-color: $color-dark;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-radius: 28px;
       }
     }
   }
@@ -84,11 +112,11 @@
         background-color: $color-dark;
       }
     }
-    .try-button{
-        width: 126px;
-        height: 56px;
-        border-radius: 28px;
-        background-color: $color-primary;
+    .try-button {
+      width: 126px;
+      height: 56px;
+      border-radius: 28px;
+      background-color: $color-primary;
     }
   }
 }
