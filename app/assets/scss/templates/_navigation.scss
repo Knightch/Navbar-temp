@@ -36,6 +36,13 @@
           line-height: 26px;
           letter-spacing: -0.36px;
         }
+        .dropdown-toggle {
+          padding-top: 0;
+          padding-right: 0;
+          &::after {
+            margin-left: 1.255em;
+          }
+        }
       }
     }
     .button-list {
@@ -50,9 +57,9 @@
         border-radius: 28px;
       }
       .light-search-button {
-          img{
-              margin-right: 19px;
-          }
+        img {
+          margin-right: 19px;
+        }
         width: 136px;
         height: 56px;
         margin-bottom: 12px;
@@ -99,6 +106,16 @@
         border: 2px solid $color-primary;
         background-color: $color-primary;
       }
+    }
+    .border-button{
+        color: $black;
+        width: 104px;
+        height: 56px;
+        background-color: $white;
+        &:hover {
+            border-radius: 28px;
+            border: 2px solid #e7e5ea56;
+          }
     }
     .light-border-button {
       color: $white;

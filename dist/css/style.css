@@ -112,6 +112,15 @@ h6, .h6 {
   letter-spacing: -0.36px;
 }
 
+.header__container .header__list ul li .dropdown-toggle {
+  padding-top: 0;
+  padding-right: 0;
+}
+
+.header__container .header__list ul li .dropdown-toggle::after {
+  margin-left: 1.255em;
+}
+
 .header__container .header__list .button-list {
   align-self: flex-start;
 }
@@ -182,6 +191,18 @@ h6, .h6 {
   color: #000;
   border: 2px solid #ffdda9;
   background-color: #ffdda9;
+}
+
+.header__container .header__buttons .border-button {
+  color: #000;
+  width: 104px;
+  height: 56px;
+  background-color: #fff;
+}
+
+.header__container .header__buttons .border-button:hover {
+  border-radius: 28px;
+  border: 2px solid #e7e5ea56;
 }
 
 .header__container .header__buttons .light-border-button {
