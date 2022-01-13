@@ -83,10 +83,13 @@ h6, .h6 {
   padding-right: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .header__container {
-    width: 1024px;
+    width: 900px;
     height: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 0px;
   }
 }
 
@@ -126,13 +129,19 @@ h6, .h6 {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
   .header__container .header__list ul {
     display: flex;
     align-self: center;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 576px) and (min-width: 1200px) {
+  .header__container .header__list ul {
     gap: 40px;
   }
 }
@@ -221,6 +230,13 @@ h6, .h6 {
   background-color: #ffdda9;
 }
 
+@media (min-width: 576px) {
+  .header__container .header__buttons .light-button {
+    background-color: #fff;
+    left: 0;
+  }
+}
+
 @media (min-width: 1200px) {
   .header__container .header__buttons .light-button {
     color: #000;
@@ -231,7 +247,7 @@ h6, .h6 {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
   .header__container .header__buttons .light-button:hover {
     border-radius: 28px;
     background-color: #ffdda9;
@@ -242,7 +258,7 @@ h6, .h6 {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
   .header__container .header__buttons .light-button:nth-child(1) {
     display: block;
   }
@@ -290,7 +306,7 @@ h6, .h6 {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
   .header__container .header__buttons .border-button:nth-child(1) {
     display: block;
   }
@@ -300,7 +316,7 @@ h6, .h6 {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
   .header__container .header__buttons .border-button:nth-child(2) {
     display: block;
   }
@@ -377,7 +393,7 @@ h6, .h6 {
   padding: 8px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
   .circle-hamburger {
     display: none;
   }

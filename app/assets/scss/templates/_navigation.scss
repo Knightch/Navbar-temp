@@ -11,9 +11,12 @@
   margin-bottom: 100px;
   padding-left: 15px;
   padding-right: 15px;
-  @include tablet {
-    width: 1024px;
+  @include mobile-lg {
+    width: 900px;
     height: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 0px;
   }
   @include large-desktops {
     width: 1440px;
@@ -40,13 +43,16 @@
     margin-top: 20px;
     ul {
       display: none;
-      @include large-desktops {
+      @include mobile-lg {
         display: flex;
         align-self: center;
         flex-direction: row;
         justify-content: space-between;
         list-style: none;
-        gap: 40px;
+        gap: 20px;
+        @include large-desktops {
+          gap: 40px;
+        }
       }
       li {
         a {
@@ -118,6 +124,10 @@
       border-radius: 24px;
       left: -15px;
       background-color: $color-primary;
+      @include mobile-lg {
+        background-color: $white;
+        left: 0;
+      }
       @include large-desktops {
         color: $black;
         width: 104px;
@@ -126,14 +136,14 @@
         left: 0;
       }
       &:hover {
-        @include large-desktops {
+        @include mobile-lg {
           border-radius: 28px;
           background-color: $color-primary;
         }
       }
       &:nth-child(1) {
         display: none;
-        @include large-desktops {
+        @include mobile-lg {
           display: block;
         }
       }
@@ -171,13 +181,13 @@
       }
       &:nth-child(1) {
         display: none;
-        @include large-desktops {
+        @include mobile-lg {
           display: block;
         }
       }
       &:nth-child(2) {
         display: none;
-        @include large-desktops {
+        @include mobile-lg {
           display: block;
         }
       }
@@ -245,7 +255,7 @@
   border-radius: 50px;
   border: 1px solid #e7e5ea;
   padding: 8px;
-  @include large-desktops {
+  @include mobile-lg {
     display: none;
   }
 }
@@ -285,16 +295,16 @@
 .nav-hamburger-4 {
   border: none !important;
   padding: 14px !important;
-  .bar:nth-child(1){
+  .bar:nth-child(1) {
     width: 8px;
     height: 2px;
     opacity: 0.4;
   }
-  .bar:nth-child(2){
+  .bar:nth-child(2) {
     width: 16px;
     height: 2px;
   }
-  .bar:nth-child(3){
+  .bar:nth-child(3) {
     width: 8px;
     height: 2px;
     opacity: 0.4;
