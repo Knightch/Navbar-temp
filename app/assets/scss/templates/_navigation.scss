@@ -1,18 +1,33 @@
 // navigation-1
 .header__container {
-  width: 1440px;
-  height: 100px;
   margin: auto;
-  margin-top: 20px;
-  margin-bottom: 100px;
-  padding-left: 165px;
-  padding-right: 165px;
+  background-color: $white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: $white;
+  width: 375px;
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include tablet {
+    width: 1024px;
+    height: 100px;
+  }
+  @include large-desktops {
+    width: 1440px;
+    height: 100px;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
   .header__logo {
     align-self: center;
+    img {
+      position: relative;
+      left: -25px;
+    }
   }
   .header__list {
     align-self: center;
@@ -21,20 +36,27 @@
     gap: 40px;
     margin-top: 20px;
     ul {
-      display: flex;
-      align-self: center;
-      flex-direction: row;
-      justify-content: space-between;
-      list-style: none;
-      gap: 40px;
+      display: none;
+      @include large-desktops {
+        display: flex;
+        align-self: center;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        gap: 40px;
+      }
       li {
         a {
-          color: $black;
-          font-size: $h6;
           font-family: $font-primary;
+          color: $black;
           font-weight: 700;
-          line-height: 26px;
+          font-size: $body-text-size;
+          line-height: 24px;
           letter-spacing: -0.36px;
+          @include large-desktops {
+            font-size: $h6;
+            line-height: 26px;
+          }
         }
         .dropdown-toggle {
           padding-top: 0;
@@ -76,20 +98,40 @@
     gap: 30px;
     button {
       font-family: $font-primary;
-      font-size: $h6;
       font-weight: 700;
-      line-height: 26px;
       letter-spacing: -0.36px;
+      font-size: $body-text-size;
+      line-height: 24px;
       border: none;
+      @include large-desktops {
+        font-size: $h6;
+        line-height: 26px;
+      }
     }
     .light-button {
-      color: $black;
-      width: 104px;
-      height: 56px;
-      background-color: $white;
+      position: relative;
+      width: 89px;
+      height: 48px;
+      border-radius: 24px;
+      left: -15px;
+      background-color: $color-primary;
+      @include large-desktops {
+        color: $black;
+        width: 104px;
+        height: 56px;
+        background-color: $white;
+      }
       &:hover {
-        border-radius: 28px;
-        background-color: $color-primary;
+        @include large-desktops {
+          border-radius: 28px;
+          background-color: $color-primary;
+        }
+      }
+      &:nth-child(1) {
+        display: none;
+        @include large-desktops {
+          display: block;
+        }
       }
     }
     .dark-button {
@@ -107,15 +149,37 @@
         background-color: $color-primary;
       }
     }
-    .border-button{
-        color: $black;
+    .border-button {
+      position: relative;
+      color: $black;
+      width: 89px;
+      height: 48px;
+      border-radius: 28px;
+      border: 2px solid #e7e5ea56;
+      background-color: $white;
+      left: -15px;
+      @include large-desktops {
         width: 104px;
         height: 56px;
-        background-color: $white;
-        &:hover {
-            border-radius: 28px;
-            border: 2px solid #e7e5ea56;
-          }
+      }
+      &:nth-child(1) {
+        display: none;
+        @include desktops {
+          display: block;
+        }
+      }
+      &:nth-child(2) {
+        display: none;
+        @include desktops {
+          display: blockx;
+        }
+      }
+      &:hover {
+        @include large-desktops {
+          border-radius: 28px;
+          border: 2px solid #e7e5ea56;
+        }
+      }
     }
     .light-border-button {
       color: $white;
@@ -146,5 +210,44 @@
     a {
       color: $white !important;
     }
+  }
+}
+
+.circle-hamburger {
+  display: block;
+  align-self: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  border: 1px solid #e7e5ea;
+  padding: 8px;
+  @include large-desktops {
+    display: none;
+  }
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: $color-dark;
+  &:nth-child(1) {
+    position: relative;
+    width: 5.33px;
+    height: 1.33px;
+    left: -4px;
+  }
+  &:nth-child(2) {
+    width: 10.67px;
+    height: 1.33px;
+  }
+  &:nth-child(3) {
+    position: relative;
+    width: 5.33px;
+    height: 1.33px;
+    left: 4px;
   }
 }
