@@ -11,7 +11,7 @@
   margin-bottom: 100px;
   padding-left: 15px;
   padding-right: 15px;
-  @include mobile-xs {
+  @include mobile-lg {
     width: 868px;
   }
   @include tablet {
@@ -111,7 +111,7 @@
     align-self: center;
     display: flex;
     gap: 30px;
-    @include mmobile-lg {
+    @include mobile-lg {
       gap: 20px;
     }
     button {
@@ -317,5 +317,20 @@
     width: 8px;
     height: 2px;
     opacity: 0.4;
+  }
+}
+
+// navigation 5
+.nav-hamburger-5 {
+  @extend .nav-hamburger-4;
+  position: relative;
+  right: -300px;
+}
+.nav-5_logo {
+  img {
+    left: -140px !important;
+    @include large-desktops{
+      left: 0px !important;
+    }
   }
 }

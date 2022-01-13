@@ -85,10 +85,16 @@ h6, .h6 {
 
 @media (min-width: 576px) {
   .header__container {
+    width: 868px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__container {
     width: 900px;
     height: 100px;
     padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 150px;
     gap: 0px;
   }
 }
@@ -209,6 +215,12 @@ h6, .h6 {
   align-self: center;
   display: flex;
   gap: 30px;
+}
+
+@media (min-width: 576px) {
+  .header__container .header__buttons {
+    gap: 20px;
+  }
 }
 
 .header__container .header__buttons button {
@@ -437,26 +449,41 @@ h6, .h6 {
   display: block !important;
 }
 
-.nav-hamburger-4 {
+.nav-hamburger-4, .nav-hamburger-5 {
   border: none !important;
   padding: 14px !important;
 }
 
-.nav-hamburger-4 .bar:nth-child(1) {
+.nav-hamburger-4 .bar:nth-child(1), .nav-hamburger-5 .bar:nth-child(1) {
   width: 8px;
   height: 2px;
   opacity: 0.4;
 }
 
-.nav-hamburger-4 .bar:nth-child(2) {
+.nav-hamburger-4 .bar:nth-child(2), .nav-hamburger-5 .bar:nth-child(2) {
   width: 16px;
   height: 2px;
 }
 
-.nav-hamburger-4 .bar:nth-child(3) {
+.nav-hamburger-4 .bar:nth-child(3), .nav-hamburger-5 .bar:nth-child(3) {
   width: 8px;
   height: 2px;
   opacity: 0.4;
+}
+
+.nav-hamburger-5 {
+  position: relative;
+  right: -300px;
+}
+
+.nav-5_logo img {
+  left: -140px !important;
+}
+
+@media (min-width: 1200px) {
+  .nav-5_logo img {
+    left: 0px !important;
+  }
 }
 
 /*# sourceMappingURL=maps/style.css.map */
