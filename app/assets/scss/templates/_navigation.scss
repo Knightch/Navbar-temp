@@ -28,6 +28,18 @@
     padding-right: 165px;
   }
 
+  .header__visit-tour {
+    align-self: center;
+    .visit-tour-btn {
+      @include large-desktops {
+        width: 117px;
+        height: 56px;
+        border-radius: 28px;
+        background-color: $white;
+        border: 2px solid #e7e5ea;
+      }
+    }
+  }
   .header__logo {
     align-self: center;
     img {
@@ -112,7 +124,7 @@
         margin-bottom: 16px;
         border-radius: 28px;
         background-color: $color-primary;
-        @include large-desktops{
+        @include large-desktops {
           width: 122px;
           height: 56px;
           margin-bottom: 12px;
@@ -337,4 +349,3 @@
 }
 
 // navigation 6
- 

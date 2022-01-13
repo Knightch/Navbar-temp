@@ -124,6 +124,20 @@ button {
   }
 }
 
+.header__container .header__visit-tour {
+  align-self: center;
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__visit-tour .visit-tour-btn {
+    width: 117px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #fff;
+    border: 2px solid #e7e5ea;
+  }
+}
+
 .header__container .header__logo {
   align-self: center;
 }
