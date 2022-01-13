@@ -105,6 +105,14 @@
         border: 2px solid rgba(255, 255, 255, 0.1);
         border-radius: 28px;
       }
+      .light-clr-btn {
+        width: 122px;
+        height: 56px;
+        margin-bottom: 12px;
+        border: none;
+        border-radius: 28px;
+        background-color: $color-primary;
+      }
     }
   }
   .header__buttons {
@@ -113,18 +121,6 @@
     gap: 30px;
     @include mobile-lg {
       gap: 20px;
-    }
-    button {
-      font-family: $font-primary;
-      font-weight: 700;
-      letter-spacing: -0.36px;
-      font-size: $body-text-size;
-      line-height: 24px;
-      border: none;
-      @include large-desktops {
-        font-size: $h6;
-        line-height: 26px;
-      }
     }
     .light-button {
       position: relative;
@@ -329,8 +325,11 @@
 .nav-5_logo {
   img {
     left: -140px !important;
-    @include large-desktops{
+    @include large-desktops {
       left: 0px !important;
     }
   }
 }
+
+// navigation 6
+ 

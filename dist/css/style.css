@@ -69,6 +69,22 @@ h6, .h6 {
   font-size: 16px;
 }
 
+button {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  font-size: 14px;
+  line-height: 24px;
+  border: none;
+}
+
+@media (min-width: 1200px) {
+  button {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
 .header__container {
   margin: auto;
   background-color: #fff;
@@ -211,6 +227,15 @@ h6, .h6 {
   margin-right: 19px;
 }
 
+.header__container .header__list .button-list .light-clr-btn {
+  width: 122px;
+  height: 56px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 28px;
+  background-color: #ffdda9;
+}
+
 .header__container .header__buttons {
   align-self: center;
   display: flex;
@@ -220,22 +245,6 @@ h6, .h6 {
 @media (min-width: 576px) {
   .header__container .header__buttons {
     gap: 20px;
-  }
-}
-
-.header__container .header__buttons button {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.36px;
-  font-size: 14px;
-  line-height: 24px;
-  border: none;
-}
-
-@media (min-width: 1200px) {
-  .header__container .header__buttons button {
-    font-size: 16px;
-    line-height: 26px;
   }
 }
 
