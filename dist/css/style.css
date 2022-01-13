@@ -324,6 +324,31 @@ h6, .h6 {
   background-color: #ffdda9;
 }
 
+.header__container .header__icons {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__icons {
+    gap: 32px;
+  }
+}
+
+.header__container .header__icons img {
+  width: 16px;
+  height: 13.33px;
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__icons img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .dark-theme {
   background-color: #391484;
 }

@@ -200,6 +200,23 @@
       background-color: $color-primary;
     }
   }
+  .header__icons {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    @include large-desktops {
+      gap: 32px;
+    }
+    img {
+      width: 16px;
+      height: 13.33px;
+      @include large-desktops {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
 }
 
 .dark-theme {
