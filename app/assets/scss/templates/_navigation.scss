@@ -106,12 +106,17 @@
         border-radius: 28px;
       }
       .light-clr-btn {
-        width: 122px;
-        height: 56px;
-        margin-bottom: 12px;
+        width: 105px;
+        height: 48px;
         border: none;
+        margin-bottom: 16px;
         border-radius: 28px;
         background-color: $color-primary;
+        @include large-desktops{
+          width: 122px;
+          height: 56px;
+          margin-bottom: 12px;
+        }
       }
     }
   }

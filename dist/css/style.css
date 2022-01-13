@@ -228,12 +228,20 @@ button {
 }
 
 .header__container .header__list .button-list .light-clr-btn {
-  width: 122px;
-  height: 56px;
-  margin-bottom: 12px;
+  width: 105px;
+  height: 48px;
   border: none;
+  margin-bottom: 16px;
   border-radius: 28px;
   background-color: #ffdda9;
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__list .button-list .light-clr-btn {
+    width: 122px;
+    height: 56px;
+    margin-bottom: 12px;
+  }
 }
 
 .header__container .header__buttons {
