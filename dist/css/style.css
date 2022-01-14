@@ -294,19 +294,19 @@ button {
   }
 }
 
-.header__container .header__buttons {
+.header__container .header__buttons, .header__container .header__buttons_mobile-view {
   align-self: center;
   display: flex;
   gap: 30px;
 }
 
 @media (min-width: 576px) {
-  .header__container .header__buttons {
+  .header__container .header__buttons, .header__container .header__buttons_mobile-view {
     gap: 20px;
   }
 }
 
-.header__container .header__buttons .light-button {
+.header__container .header__buttons .light-button, .header__container .header__buttons_mobile-view .light-button {
   position: relative;
   width: 89px;
   height: 48px;
@@ -316,14 +316,14 @@ button {
 }
 
 @media (min-width: 576px) {
-  .header__container .header__buttons .light-button {
+  .header__container .header__buttons .light-button, .header__container .header__buttons_mobile-view .light-button {
     background-color: #fff;
     left: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  .header__container .header__buttons .light-button {
+  .header__container .header__buttons .light-button, .header__container .header__buttons_mobile-view .light-button {
     color: #000;
     width: 104px;
     height: 56px;
@@ -333,23 +333,23 @@ button {
 }
 
 @media (min-width: 576px) {
-  .header__container .header__buttons .light-button:hover {
+  .header__container .header__buttons .light-button:hover, .header__container .header__buttons_mobile-view .light-button:hover {
     border-radius: 28px;
     background-color: #ffdda9;
   }
 }
 
-.header__container .header__buttons .light-button:nth-child(1) {
+.header__container .header__buttons .light-button:nth-child(1), .header__container .header__buttons_mobile-view .light-button:nth-child(1) {
   display: none;
 }
 
 @media (min-width: 576px) {
-  .header__container .header__buttons .light-button:nth-child(1) {
+  .header__container .header__buttons .light-button:nth-child(1), .header__container .header__buttons_mobile-view .light-button:nth-child(1) {
     display: block;
   }
 }
 
-.header__container .header__buttons .dark-button {
+.header__container .header__buttons .dark-button, .header__container .header__buttons_mobile-view .dark-button {
   width: 96px;
   height: 56px;
   color: #fff;
@@ -358,7 +358,7 @@ button {
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.header__container .header__buttons .dark-button:hover {
+.header__container .header__buttons .dark-button:hover, .header__container .header__buttons_mobile-view .dark-button:hover {
   width: 104px;
   height: 56px;
   color: #000;
@@ -366,7 +366,7 @@ button {
   background-color: #ffdda9;
 }
 
-.header__container .header__buttons .border-button {
+.header__container .header__buttons .border-button, .header__container .header__buttons_mobile-view .border-button {
   position: relative;
   color: #000;
   width: 89px;
@@ -378,7 +378,7 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .header__container .header__buttons .border-button {
+  .header__container .header__buttons .border-button, .header__container .header__buttons_mobile-view .border-button {
     width: 104px;
     height: 56px;
     border: none;
@@ -387,34 +387,34 @@ button {
   }
 }
 
-.header__container .header__buttons .border-button:nth-child(1) {
+.header__container .header__buttons .border-button:nth-child(1), .header__container .header__buttons_mobile-view .border-button:nth-child(1) {
   display: none;
 }
 
 @media (min-width: 576px) {
-  .header__container .header__buttons .border-button:nth-child(1) {
+  .header__container .header__buttons .border-button:nth-child(1), .header__container .header__buttons_mobile-view .border-button:nth-child(1) {
     display: block;
   }
 }
 
-.header__container .header__buttons .border-button:nth-child(2) {
+.header__container .header__buttons .border-button:nth-child(2), .header__container .header__buttons_mobile-view .border-button:nth-child(2) {
   display: none;
 }
 
 @media (min-width: 576px) {
-  .header__container .header__buttons .border-button:nth-child(2) {
+  .header__container .header__buttons .border-button:nth-child(2), .header__container .header__buttons_mobile-view .border-button:nth-child(2) {
     display: block;
   }
 }
 
 @media (min-width: 1200px) {
-  .header__container .header__buttons .border-button:hover {
+  .header__container .header__buttons .border-button:hover, .header__container .header__buttons_mobile-view .border-button:hover {
     border-radius: 28px;
     border: 2px solid #e7e5ea56;
   }
 }
 
-.header__container .header__buttons .light-border-button {
+.header__container .header__buttons .light-border-button, .header__container .header__buttons_mobile-view .light-border-button {
   color: #fff;
   width: 96px;
   height: 56px;
@@ -423,26 +423,26 @@ button {
   background-color: #391484;
 }
 
-.header__container .header__buttons .light-border-button:hover {
+.header__container .header__buttons .light-border-button:hover, .header__container .header__buttons_mobile-view .light-border-button:hover {
   border: 2px solid rgba(255, 255, 255, 0.1);
   background-color: #391484;
 }
 
-.header__container .header__buttons .try-button {
+.header__container .header__buttons .try-button, .header__container .header__buttons_mobile-view .try-button {
   width: 126px;
   height: 56px;
   border-radius: 28px;
   background-color: #ffdda9;
 }
 
-.header__container .header__buttons .search-icon {
+.header__container .header__buttons .search-icon, .header__container .header__buttons_mobile-view .search-icon {
   width: 48px;
   height: 48px;
   border-radius: 28px;
   border: 1px solid #e7e5ea;
 }
 
-.header__container .header__buttons .search-icon img {
+.header__container .header__buttons .search-icon img, .header__container .header__buttons_mobile-view .search-icon img {
   position: relative;
   left: 12px;
   top: 12px;
@@ -451,18 +451,18 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .header__container .header__buttons .search-icon img {
+  .header__container .header__buttons .search-icon img, .header__container .header__buttons_mobile-view .search-icon img {
     display: none;
   }
 }
 
 @media (min-width: 1200px) {
-  .header__container .header__buttons .search-icon {
+  .header__container .header__buttons .search-icon, .header__container .header__buttons_mobile-view .search-icon {
     display: none;
   }
 }
 
-.header__container .header__buttons .search-button {
+.header__container .header__buttons .search-button, .header__container .header__buttons_mobile-view .search-button {
   width: 112px;
   height: 48px;
   background-color: #fff;
@@ -471,9 +471,15 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .header__container .header__buttons .search-button {
+  .header__container .header__buttons .search-button, .header__container .header__buttons_mobile-view .search-button {
     width: 136px;
     height: 56px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__buttons_mobile-view {
+    display: none;
   }
 }
 
@@ -564,7 +570,7 @@ button {
   left: 4px;
 }
 
-.header__buttons .nav-4:nth-child(2) {
+.header__buttons .nav-4:nth-child(2), .header__container .header__buttons_mobile-view .nav-4:nth-child(2) {
   display: block !important;
 }
 
@@ -612,6 +618,24 @@ button {
     display: flex;
     flex-direction: column;
     height: 150px;
+  }
+}
+
+.mobile__search-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: #391484;
+  border: 2px solid #e7e5ea63;
+}
+
+.mobile__search-btn img {
+  background-color: #391484;
+}
+
+@media (min-width: 1200px) {
+  .mobile__search-btn {
+    display: none;
   }
 }
 
