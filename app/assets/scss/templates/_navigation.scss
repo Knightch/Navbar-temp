@@ -74,6 +74,7 @@
     }
     &15 {
       @extend .header__logo-nav-dark;
+      left: -8%;
       @include large-desktops {
         left: -32%;
       }
@@ -310,6 +311,12 @@
         border: 2px solid rgba(255, 255, 255, 0.1);
         background-color: $color-dark;
       }
+      &15 {
+        @extend .light-border-button;
+        @include mobile-lg {
+          display: none;
+        }
+      }
     }
     .try-button {
       width: 126px;
@@ -354,9 +361,13 @@
         height: 56px;
       }
       &__dark {
-        @extend .search-button;
-        background-color: $color-dark;
-        color: $white;
+        display: none;
+        @include large-desktops {
+          @extend .search-button;
+          display: block;
+          background-color: $color-dark;
+          color: $white;
+        }
       }
     }
     &_mobile-view {
