@@ -128,13 +128,35 @@ button {
   align-self: center;
 }
 
+.header__container .header__visit-tour .visit-tour-btn {
+  width: 101px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: #fff;
+  border: 2px solid #e7e5ea;
+}
+
 @media (min-width: 1200px) {
   .header__container .header__visit-tour .visit-tour-btn {
     width: 117px;
     height: 56px;
-    border-radius: 28px;
-    background-color: #fff;
-    border: 2px solid #e7e5ea;
+  }
+}
+
+.header__container .header__logo-nav-7 {
+  position: relative;
+  left: 15px;
+  top: 5px;
+  background-image: url("/image/svg/navigations/Logo-mobile.svg");
+  align-self: center;
+  width: 120px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__logo-nav-7 {
+    background-image: url("/image/svg/navigations/logo.svg");
   }
 }
 

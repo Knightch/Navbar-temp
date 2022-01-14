@@ -31,15 +31,31 @@
   .header__visit-tour {
     align-self: center;
     .visit-tour-btn {
+      width: 101px;
+      height: 48px;
+      border-radius: 28px;
+      background-color: $white;
+      border: 2px solid #e7e5ea;
       @include large-desktops {
         width: 117px;
         height: 56px;
-        border-radius: 28px;
-        background-color: $white;
-        border: 2px solid #e7e5ea;
       }
     }
   }
+  .header__logo-nav-7 {
+    position: relative;
+    left: 15px;
+    top: 5px;
+    background-image: url('/image/svg/navigations/Logo-mobile.svg');
+    align-self: center;
+    width: 120px;
+    height: 30px;
+    background-repeat: no-repeat;
+    @include large-desktops{
+      background-image: url('/image/svg/navigations/logo.svg');
+    }
+  }
+  
   .header__logo {
     align-self: center;
     img {
@@ -348,4 +364,4 @@
   }
 }
 
-// navigation 6
+// navigation 7
