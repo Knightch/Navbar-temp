@@ -222,6 +222,10 @@
         background-color: $color-primary;
       }
     }
+    .no-border-dark-button{
+      @extend .dark-button;
+      border: none;
+    }
     .border-button {
       position: relative;
       color: $black;

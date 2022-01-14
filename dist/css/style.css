@@ -359,7 +359,7 @@ button {
   }
 }
 
-.header__container .header__buttons .dark-button, .header__container .header__buttons_mobile-view .dark-button {
+.header__container .header__buttons .dark-button, .header__container .header__buttons_mobile-view .dark-button, .header__container .header__buttons .no-border-dark-button, .header__container .header__buttons_mobile-view .no-border-dark-button {
   width: 96px;
   height: 56px;
   color: #fff;
@@ -368,12 +368,16 @@ button {
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.header__container .header__buttons .dark-button:hover, .header__container .header__buttons_mobile-view .dark-button:hover {
+.header__container .header__buttons .dark-button:hover, .header__container .header__buttons_mobile-view .dark-button:hover, .header__container .header__buttons .no-border-dark-button:hover, .header__container .header__buttons_mobile-view .no-border-dark-button:hover {
   width: 104px;
   height: 56px;
   color: #000;
   border: 2px solid #ffdda9;
   background-color: #ffdda9;
+}
+
+.header__container .header__buttons .no-border-dark-button, .header__container .header__buttons_mobile-view .no-border-dark-button {
+  border: none;
 }
 
 .header__container .header__buttons .border-button, .header__container .header__buttons_mobile-view .border-button {
