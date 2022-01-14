@@ -68,7 +68,12 @@
     @include large-desktops {
       background-image: url("/image/svg/navigations/light-logo.svg");
     }
+    &14{
+      @extend .header__logo-nav-dark;
+      left: -75px;
+    }
   }
+
 
   .header__logo {
     align-self: center;
@@ -222,9 +227,33 @@
         background-color: $color-primary;
       }
     }
-    .no-border-dark-button{
+    .no-border-dark-button {
       @extend .dark-button;
       border: none;
+      &:nth-child(1){
+        display: none;
+        @include mobile-lg{
+          display: block;
+        }
+      }
+      &:nth-child(2){
+        display: none;
+        @include mobile-lg{
+          display: block;
+        }
+      }
+      &:nth-child(3){
+        display: none;
+        @include mobile-lg{
+          display: block;
+        }
+      }
+      &:nth-child(4){
+        display: block;
+        @include mobile-lg{
+          display: none;
+        }
+      }
     }
     .border-button {
       position: relative;
@@ -282,6 +311,13 @@
       height: 56px;
       border-radius: 28px;
       background-color: $color-primary;
+      &-nav-14{
+        @extend .try-button;
+        display: block;
+        @include mobile-lg{
+          display: none;
+        }
+      }
     }
     .search-icon {
       width: 48px;
@@ -472,7 +508,7 @@
 }
 
 // navigation 13
-.dark-search__btn{
+.dark-search__btn {
   width: 112px;
   height: 48px;
   color: $white;
@@ -481,3 +517,4 @@
   border: 1px solid rgba(255, 255, 255, 0.274);
 }
 
+// navigation 14
