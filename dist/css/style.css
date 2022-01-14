@@ -633,6 +633,7 @@ button {
     padding-top: 37px;
     padding-bottom: 34px;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     height: 150px;
   }

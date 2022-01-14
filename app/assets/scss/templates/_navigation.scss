@@ -121,6 +121,18 @@
             line-height: 26px;
           }
         }
+        // .hover-effect{
+        //   &:hover{
+        //     @include large-desktops{
+        //       position: relative;
+        //       top: 12px;
+        //       width: 32px;
+        //       height: 2px;
+        //       border-radius: 1px;
+        //       background-color: $color-primary;
+        //     }
+        //   }
+        // }
         .dropdown-toggle {
           padding-top: 0;
           padding-right: 0;
@@ -437,6 +449,7 @@
     padding-top: 37px;
     padding-bottom: 34px;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     height: 150px;
   }
