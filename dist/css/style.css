@@ -143,7 +143,7 @@ button {
   }
 }
 
-.header__container .header__logo-nav-7, .header__container .header__logo-nav-8 {
+.header__container .header__logo-nav-7, .header__container .header__logo-nav-8, .header__container .header__logo-nav-dark {
   position: relative;
   left: -10px;
   background-image: url("/image/svg/navigations/Logo-mobile.svg");
@@ -154,7 +154,7 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .header__container .header__logo-nav-7, .header__container .header__logo-nav-8 {
+  .header__container .header__logo-nav-7, .header__container .header__logo-nav-8, .header__container .header__logo-nav-dark {
     background-image: url("/image/svg/navigations/logo.svg");
     left: 15px;
     top: 5px;
@@ -165,6 +165,17 @@ button {
 
 .header__container .header__logo-nav-8 {
   left: 26px;
+}
+
+.header__container .header__logo-nav-dark {
+  left: -36px;
+  background-image: url("/image/svg/header/Navigations/mobile-dark-logo.svg");
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__logo-nav-dark {
+    background-image: url("/image/svg/navigations/light-logo.svg");
+  }
 }
 
 .header__container .header__logo {
@@ -297,7 +308,6 @@ button {
 .header__container .header__buttons, .header__container .header__buttons_mobile-view {
   align-self: center;
   display: flex;
-  gap: 30px;
 }
 
 @media (min-width: 576px) {
@@ -415,12 +425,19 @@ button {
 }
 
 .header__container .header__buttons .light-border-button, .header__container .header__buttons_mobile-view .light-border-button {
+  width: 89px;
+  height: 48px;
   color: #fff;
-  width: 96px;
-  height: 56px;
   color: #fff;
   border-radius: 28px;
   background-color: #391484;
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__buttons .light-border-button, .header__container .header__buttons_mobile-view .light-border-button {
+    width: 96px;
+    height: 56px;
+  }
 }
 
 .header__container .header__buttons .light-border-button:hover, .header__container .header__buttons_mobile-view .light-border-button:hover {

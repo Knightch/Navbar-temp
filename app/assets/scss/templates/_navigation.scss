@@ -61,6 +61,14 @@
     @extend .header__logo-nav-7;
     left: 26px;
   }
+  .header__logo-nav-dark{
+    @extend .header__logo-nav-7;
+    left: -36px;
+    background-image: url("/image/svg/header/Navigations/mobile-dark-logo.svg");
+    @include large-desktops{
+      background-image: url("/image/svg/navigations/light-logo.svg");
+    }
+  }
 
   .header__logo {
     align-self: center;
@@ -163,7 +171,7 @@
   .header__buttons {
     align-self: center;
     display: flex;
-    gap: 30px;
+    // gap: 0px;
     @include mobile-lg {
       gap: 20px;
     }
@@ -249,12 +257,16 @@
       }
     }
     .light-border-button {
+      width: 89px;
+      height: 48px;
       color: $white;
-      width: 96px;
-      height: 56px;
       color: $white;
       border-radius: 28px;
       background-color: $color-dark;
+      @include large-desktops{
+        width: 96px;
+        height: 56px; 
+      }
       &:hover {
         border: 2px solid rgba(255, 255, 255, 0.1);
         background-color: $color-dark;
