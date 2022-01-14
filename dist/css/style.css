@@ -573,4 +573,14 @@ button {
   }
 }
 
+@media (min-width: 992px) {
+  .nav-9 {
+    padding-top: 37px;
+    padding-bottom: 34px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+  }
+}
+
 /*# sourceMappingURL=maps/style.css.map */

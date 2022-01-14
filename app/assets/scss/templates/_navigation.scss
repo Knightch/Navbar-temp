@@ -389,4 +389,13 @@
   }
 }
 
-// navigation 8
+// navigation 9
+.nav-9{
+  @include desktops{
+    padding-top: 37px;
+    padding-bottom: 34px;
+    display:  flex;
+    flex-direction: column;
+    height: 150px;
+  }
+}
