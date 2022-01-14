@@ -75,6 +75,12 @@
       }
     }
   }
+  .center-logo{
+    @include desktops{
+      position: relative;
+      left: 110px;
+    }
+  }
   .header__list {
     align-self: center;
     display: flex;
@@ -346,6 +352,9 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: $color-dark;
+  &-light {
+    background-color: $white;
+  }
   &:nth-child(1) {
     position: relative;
     width: 5.33px;

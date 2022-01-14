@@ -188,6 +188,13 @@ button {
   }
 }
 
+@media (min-width: 992px) {
+  .header__container .center-logo {
+    position: relative;
+    left: 110px;
+  }
+}
+
 .header__container .header__list {
   align-self: center;
   display: flex;
@@ -532,6 +539,10 @@ button {
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   background-color: #391484;
+}
+
+.bar-light {
+  background-color: #fff;
 }
 
 .bar:nth-child(1) {
