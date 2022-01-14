@@ -455,13 +455,18 @@ button {
   }
 }
 
+.header__container .header__buttons .search-button {
+  width: 112px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 28px;
+  border: 2px solid #e7e5ea;
+}
+
 @media (min-width: 1200px) {
   .header__container .header__buttons .search-button {
     width: 136px;
     height: 56px;
-    background-color: #fff;
-    border-radius: 28px;
-    border: 2px solid #e7e5ea;
   }
 }
 

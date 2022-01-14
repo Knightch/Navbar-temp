@@ -280,12 +280,14 @@
       }
     }
     .search-button {
+      width: 112px;
+      height: 48px;
+      background-color: $white;
+      border-radius: 28px;
+      border: 2px solid #e7e5ea;
       @include large-desktops {
         width: 136px;
         height: 56px;
-        background-color: $white;
-        border-radius: 28px;
-        border: 2px solid #e7e5ea;
       }
     }
   }
