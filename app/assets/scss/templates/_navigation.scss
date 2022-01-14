@@ -44,15 +44,18 @@
   }
   .header__logo-nav-7 {
     position: relative;
-    left: 15px;
-    top: 5px;
+    left: -10px;
     background-image: url('/image/svg/navigations/Logo-mobile.svg');
+    width: 32px;
+    height: 32px;
     align-self: center;
-    width: 120px;
-    height: 30px;
     background-repeat: no-repeat;
     @include large-desktops{
       background-image: url('/image/svg/navigations/logo.svg');
+      left: 15px;
+      top: 5px;
+      width: 120px;
+      height: 30px;
     }
   }
   
