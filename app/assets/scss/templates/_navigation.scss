@@ -68,12 +68,17 @@
     @include large-desktops {
       background-image: url("/image/svg/navigations/light-logo.svg");
     }
-    &14{
+    &14 {
       @extend .header__logo-nav-dark;
       left: -75px;
     }
+    &15 {
+      @extend .header__logo-nav-dark;
+      @include large-desktops {
+        left: -32%;
+      }
+    }
   }
-
 
   .header__logo {
     align-self: center;
@@ -230,27 +235,27 @@
     .no-border-dark-button {
       @extend .dark-button;
       border: none;
-      &:nth-child(1){
+      &:nth-child(1) {
         display: none;
-        @include mobile-lg{
+        @include mobile-lg {
           display: block;
         }
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         display: none;
-        @include mobile-lg{
+        @include mobile-lg {
           display: block;
         }
       }
-      &:nth-child(3){
+      &:nth-child(3) {
         display: none;
-        @include mobile-lg{
+        @include mobile-lg {
           display: block;
         }
       }
-      &:nth-child(4){
+      &:nth-child(4) {
         display: block;
-        @include mobile-lg{
+        @include mobile-lg {
           display: none;
         }
       }
@@ -311,10 +316,10 @@
       height: 56px;
       border-radius: 28px;
       background-color: $color-primary;
-      &-nav-14{
+      &-nav-14 {
         @extend .try-button;
         display: block;
-        @include mobile-lg{
+        @include mobile-lg {
           display: none;
         }
       }
@@ -347,6 +352,11 @@
       @include large-desktops {
         width: 136px;
         height: 56px;
+      }
+      &__dark {
+        @extend .search-button;
+        background-color: $color-dark;
+        color: $white;
       }
     }
     &_mobile-view {

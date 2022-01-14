@@ -143,7 +143,7 @@ button {
   }
 }
 
-.header__container .header__logo-nav-7, .header__container .header__logo-nav-8, .header__container .header__logo-nav-dark, .header__container .header__logo-nav-dark14 {
+.header__container .header__logo-nav-7, .header__container .header__logo-nav-8, .header__container .header__logo-nav-dark, .header__container .header__logo-nav-dark14, .header__container .header__logo-nav-dark15 {
   position: relative;
   left: -10px;
   background-image: url("/image/svg/navigations/Logo-mobile.svg");
@@ -154,7 +154,7 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .header__container .header__logo-nav-7, .header__container .header__logo-nav-8, .header__container .header__logo-nav-dark, .header__container .header__logo-nav-dark14 {
+  .header__container .header__logo-nav-7, .header__container .header__logo-nav-8, .header__container .header__logo-nav-dark, .header__container .header__logo-nav-dark14, .header__container .header__logo-nav-dark15 {
     background-image: url("/image/svg/navigations/logo.svg");
     left: 15px;
     top: 5px;
@@ -167,19 +167,25 @@ button {
   left: 26px;
 }
 
-.header__container .header__logo-nav-dark, .header__container .header__logo-nav-dark14 {
+.header__container .header__logo-nav-dark, .header__container .header__logo-nav-dark14, .header__container .header__logo-nav-dark15 {
   left: -36px;
   background-image: url("/image/svg/header/Navigations/mobile-dark-logo.svg");
 }
 
 @media (min-width: 1200px) {
-  .header__container .header__logo-nav-dark, .header__container .header__logo-nav-dark14 {
+  .header__container .header__logo-nav-dark, .header__container .header__logo-nav-dark14, .header__container .header__logo-nav-dark15 {
     background-image: url("/image/svg/navigations/light-logo.svg");
   }
 }
 
 .header__container .header__logo-nav-dark14 {
   left: -75px;
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__logo-nav-dark15 {
+    left: -32%;
+  }
 }
 
 .header__container .header__logo {
@@ -537,7 +543,7 @@ button {
   }
 }
 
-.header__container .header__buttons .search-button, .header__container .header__buttons_mobile-view .search-button {
+.header__container .header__buttons .search-button, .header__container .header__buttons_mobile-view .search-button, .header__container .header__buttons .search-button__dark, .header__container .header__buttons_mobile-view .search-button__dark {
   width: 112px;
   height: 48px;
   background-color: #fff;
@@ -546,10 +552,15 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .header__container .header__buttons .search-button, .header__container .header__buttons_mobile-view .search-button {
+  .header__container .header__buttons .search-button, .header__container .header__buttons_mobile-view .search-button, .header__container .header__buttons .search-button__dark, .header__container .header__buttons_mobile-view .search-button__dark {
     width: 136px;
     height: 56px;
   }
+}
+
+.header__container .header__buttons .search-button__dark, .header__container .header__buttons_mobile-view .search-button__dark {
+  background-color: #391484;
+  color: #fff;
 }
 
 @media (min-width: 1200px) {
