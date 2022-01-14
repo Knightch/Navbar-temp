@@ -61,11 +61,11 @@
     @extend .header__logo-nav-7;
     left: 26px;
   }
-  .header__logo-nav-dark{
+  .header__logo-nav-dark {
     @extend .header__logo-nav-7;
     left: -36px;
     background-image: url("/image/svg/header/Navigations/mobile-dark-logo.svg");
-    @include large-desktops{
+    @include large-desktops {
       background-image: url("/image/svg/navigations/light-logo.svg");
     }
   }
@@ -121,18 +121,7 @@
             line-height: 26px;
           }
         }
-        // .hover-effect{
-        //   &:hover{
-        //     @include large-desktops{
-        //       position: relative;
-        //       top: 12px;
-        //       width: 32px;
-        //       height: 2px;
-        //       border-radius: 1px;
-        //       background-color: $color-primary;
-        //     }
-        //   }
-        // }
+
         .dropdown-toggle {
           padding-top: 0;
           padding-right: 0;
@@ -275,9 +264,9 @@
       color: $white;
       border-radius: 28px;
       background-color: $color-dark;
-      @include large-desktops{
+      @include large-desktops {
         width: 96px;
-        height: 56px; 
+        height: 56px;
       }
       &:hover {
         border: 2px solid rgba(255, 255, 255, 0.1);
@@ -320,9 +309,9 @@
         height: 56px;
       }
     }
-    &_mobile-view{
+    &_mobile-view {
       @extend .header__buttons;
-      @include large-desktops{
+      @include large-desktops {
         display: none;
       }
     }
@@ -465,8 +454,26 @@
   img {
     background-color: $color-dark;
   }
-  @include large-desktops{
+  @include large-desktops {
     display: none;
   }
+}
+
+// navigation 12
+.nav-12 {
+  @extend .nav-9;
+  @include large-desktops {
+    height: 167px;
+  }
+}
+
+// navigation 13
+.dark-search__btn{
+  width: 112px;
+  height: 48px;
+  color: $white;
+  border-radius: 28px;
+  background-color: $color-dark;
+  border: 1px solid rgba(255, 255, 255, 0.274);
 }
 

@@ -629,7 +629,7 @@ button {
 }
 
 @media (min-width: 992px) {
-  .nav-9 {
+  .nav-9, .nav-12 {
     padding-top: 37px;
     padding-bottom: 34px;
     display: flex;
@@ -655,6 +655,21 @@ button {
   .mobile__search-btn {
     display: none;
   }
+}
+
+@media (min-width: 1200px) {
+  .nav-12 {
+    height: 167px;
+  }
+}
+
+.dark-search__btn {
+  width: 112px;
+  height: 48px;
+  color: #fff;
+  border-radius: 28px;
+  background-color: #391484;
+  border: 1px solid rgba(255, 255, 255, 0.274);
 }
 
 /*# sourceMappingURL=maps/style.css.map */
