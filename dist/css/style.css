@@ -143,7 +143,7 @@ button {
   }
 }
 
-.header__container .header__logo-nav-7 {
+.header__container .header__logo-nav-7, .header__container .header__logo-nav-8 {
   position: relative;
   left: -10px;
   background-image: url("/image/svg/navigations/Logo-mobile.svg");
@@ -154,13 +154,17 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .header__container .header__logo-nav-7 {
+  .header__container .header__logo-nav-7, .header__container .header__logo-nav-8 {
     background-image: url("/image/svg/navigations/logo.svg");
     left: 15px;
     top: 5px;
     width: 120px;
     height: 30px;
   }
+}
+
+.header__container .header__logo-nav-8 {
+  left: 26px;
 }
 
 .header__container .header__logo {
@@ -422,6 +426,33 @@ button {
   height: 56px;
   border-radius: 28px;
   background-color: #ffdda9;
+}
+
+.header__container .header__buttons .search-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 28px;
+  border: 1px solid #e7e5ea;
+}
+
+.header__container .header__buttons .search-icon img {
+  position: relative;
+  left: 12px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__buttons .search-icon img {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__buttons .search-icon {
+    display: none;
+  }
 }
 
 .header__container .header__icons {
