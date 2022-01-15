@@ -79,6 +79,10 @@
         left: -32%;
       }
     }
+    &16 {
+      @extend .header__logo-nav-dark;
+      left: -0.5%;
+    }
   }
 
   .header__logo {
@@ -330,6 +334,13 @@
           display: none;
         }
       }
+      &__nav-16 {
+        display: none;
+        @include mobile-lg {
+          @extend .try-button;
+          display: block;
+        }
+      }
     }
     .search-icon {
       width: 48px;
@@ -536,6 +547,16 @@
   border-radius: 28px;
   background-color: $color-dark;
   border: 1px solid rgba(255, 255, 255, 0.274);
+  &16 {
+    @extend .dark-search__btn;
+    border: none;
+    @include mobile-lg {
+      display: none;
+    }
+    &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.274);
+    }
+  }
 }
 
 // navigation 14
