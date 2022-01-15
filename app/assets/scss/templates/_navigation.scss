@@ -103,6 +103,15 @@
         left: 2px;
       }
     }
+    &21 {
+      @extend .header__logo;
+      img {
+        display: none;
+        @include mobile-lg {
+          display: block;
+        }
+      }
+    }
   }
   .center-logo {
     @include desktops {
@@ -177,7 +186,7 @@
           @include large-desktops {
             display: none;
           }
-          &:hover{
+          &:hover {
             border: 2px solid rgba(255, 255, 255, 0.1);
           }
         }
@@ -219,7 +228,6 @@
   .header__buttons {
     align-self: center;
     display: flex;
-    // gap: 0px;
     @include mobile-lg {
       gap: 20px;
     }
@@ -255,18 +263,28 @@
       }
     }
     .dark-button {
-      width: 96px;
-      height: 56px;
+      width: 83px;
+      height: 48px;
+      gap: 20px;
       color: $white;
       border-radius: 28px;
       background-color: $color-dark;
       border: 2px solid rgba(255, 255, 255, 0.1);
-      &:hover {
-        width: 104px;
+      @include large-desktops {
+        width: 96px;
         height: 56px;
+        gap: 20px;
+      }
+      &:hover {
+        width: 89px;
+        height: 48px;
         color: $black;
         border: 2px solid $color-primary;
         background-color: $color-primary;
+        @include large-desktops {
+          width: 104px;
+          height: 56px;
+        }
       }
     }
     .no-border-dark-button {
@@ -595,4 +613,8 @@
   }
 }
 
-// navigation 14
+// navigation 21
+.nav-21{
+  display: flex;
+  gap: 20px;
+}
