@@ -613,6 +613,12 @@
   }
 }
 
+// navogation18
+.logo18{
+  @include large-desktops{
+    left: 0 !important;
+  }
+}
 // navigation 21
 .nav-21{
   display: flex;
