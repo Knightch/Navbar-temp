@@ -286,7 +286,7 @@ button {
   align-self: flex-start;
 }
 
-.header__container .header__list .button-list .light-border-button, .header__container .header__list .button-list .light-border-button17, .header__container .header__list .button-list .header__buttons .light-border-button15, .header__container .header__buttons .header__list .button-list .light-border-button15, .header__container .header__list .button-list .header__buttons_mobile-view .light-border-button15, .header__container .header__buttons_mobile-view .header__list .button-list .light-border-button15 {
+.header__container .header__list .button-list .light-border-button, .header__container .header__list .button-list .light-border-button17, .header__container .header__list .button-list .light-border-button18, .header__container .header__list .button-list .header__buttons .light-border-button15, .header__container .header__buttons .header__list .button-list .light-border-button15, .header__container .header__list .button-list .header__buttons_mobile-view .light-border-button15, .header__container .header__buttons_mobile-view .header__list .button-list .light-border-button15 {
   width: 117px;
   height: 56px;
   margin-bottom: 12px;
@@ -306,7 +306,23 @@ button {
   }
 }
 
-.header__container .header__list .button-list .light-search-button {
+.header__container .header__list .button-list .light-border-button18 {
+  width: 89px;
+  height: 48px;
+  border: none;
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__list .button-list .light-border-button18 {
+    display: none;
+  }
+}
+
+.header__container .header__list .button-list .light-border-button18:hover {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.header__container .header__list .button-list .light-search-button, .header__container .header__list .button-list .light-search-button18 {
   width: 136px;
   height: 56px;
   margin-bottom: 12px;
@@ -316,8 +332,18 @@ button {
   border-radius: 28px;
 }
 
-.header__container .header__list .button-list .light-search-button img {
+.header__container .header__list .button-list .light-search-button img, .header__container .header__list .button-list .light-search-button18 img {
   margin-right: 19px;
+}
+
+.header__container .header__list .button-list .light-search-button18 {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__list .button-list .light-search-button18 {
+    display: block;
+  }
 }
 
 .header__container .header__list .button-list .light-clr-btn {
@@ -500,7 +526,7 @@ button {
   }
 }
 
-.header__container .header__buttons .light-border-button, .header__container .header__buttons_mobile-view .light-border-button, .header__container .header__buttons .header__list .button-list .light-border-button17, .header__container .header__list .button-list .header__buttons .light-border-button17, .header__container .header__buttons_mobile-view .header__list .button-list .light-border-button17, .header__container .header__list .button-list .header__buttons_mobile-view .light-border-button17, .header__container .header__buttons .light-border-button15, .header__container .header__buttons_mobile-view .light-border-button15 {
+.header__container .header__buttons .light-border-button, .header__container .header__buttons_mobile-view .light-border-button, .header__container .header__buttons .header__list .button-list .light-border-button17, .header__container .header__list .button-list .header__buttons .light-border-button17, .header__container .header__buttons_mobile-view .header__list .button-list .light-border-button17, .header__container .header__list .button-list .header__buttons_mobile-view .light-border-button17, .header__container .header__buttons .header__list .button-list .light-border-button18, .header__container .header__list .button-list .header__buttons .light-border-button18, .header__container .header__buttons_mobile-view .header__list .button-list .light-border-button18, .header__container .header__list .button-list .header__buttons_mobile-view .light-border-button18, .header__container .header__buttons .light-border-button15, .header__container .header__buttons_mobile-view .light-border-button15 {
   width: 89px;
   height: 48px;
   color: #fff;
@@ -510,13 +536,13 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .header__container .header__buttons .light-border-button, .header__container .header__buttons_mobile-view .light-border-button, .header__container .header__buttons .header__list .button-list .light-border-button17, .header__container .header__list .button-list .header__buttons .light-border-button17, .header__container .header__buttons_mobile-view .header__list .button-list .light-border-button17, .header__container .header__list .button-list .header__buttons_mobile-view .light-border-button17, .header__container .header__buttons .light-border-button15, .header__container .header__buttons_mobile-view .light-border-button15 {
+  .header__container .header__buttons .light-border-button, .header__container .header__buttons_mobile-view .light-border-button, .header__container .header__buttons .header__list .button-list .light-border-button17, .header__container .header__list .button-list .header__buttons .light-border-button17, .header__container .header__buttons_mobile-view .header__list .button-list .light-border-button17, .header__container .header__list .button-list .header__buttons_mobile-view .light-border-button17, .header__container .header__buttons .header__list .button-list .light-border-button18, .header__container .header__list .button-list .header__buttons .light-border-button18, .header__container .header__buttons_mobile-view .header__list .button-list .light-border-button18, .header__container .header__list .button-list .header__buttons_mobile-view .light-border-button18, .header__container .header__buttons .light-border-button15, .header__container .header__buttons_mobile-view .light-border-button15 {
     width: 96px;
     height: 56px;
   }
 }
 
-.header__container .header__buttons .light-border-button:hover, .header__container .header__buttons_mobile-view .light-border-button:hover, .header__container .header__buttons .header__list .button-list .light-border-button17:hover, .header__container .header__list .button-list .header__buttons .light-border-button17:hover, .header__container .header__buttons_mobile-view .header__list .button-list .light-border-button17:hover, .header__container .header__list .button-list .header__buttons_mobile-view .light-border-button17:hover, .header__container .header__buttons .light-border-button15:hover, .header__container .header__buttons_mobile-view .light-border-button15:hover {
+.header__container .header__buttons .light-border-button:hover, .header__container .header__buttons_mobile-view .light-border-button:hover, .header__container .header__buttons .header__list .button-list .light-border-button17:hover, .header__container .header__list .button-list .header__buttons .light-border-button17:hover, .header__container .header__buttons_mobile-view .header__list .button-list .light-border-button17:hover, .header__container .header__list .button-list .header__buttons_mobile-view .light-border-button17:hover, .header__container .header__buttons .header__list .button-list .light-border-button18:hover, .header__container .header__list .button-list .header__buttons .light-border-button18:hover, .header__container .header__buttons_mobile-view .header__list .button-list .light-border-button18:hover, .header__container .header__list .button-list .header__buttons_mobile-view .light-border-button18:hover, .header__container .header__buttons .light-border-button15:hover, .header__container .header__buttons_mobile-view .light-border-button15:hover {
   border: 2px solid rgba(255, 255, 255, 0.1);
   background-color: #391484;
 }

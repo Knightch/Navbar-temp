@@ -169,6 +169,18 @@
             display: block;
           }
         }
+        &18 {
+          @extend .light-border-button;
+          width: 89px;
+          height: 48px;
+          border: none;
+          @include large-desktops {
+            display: none;
+          }
+          &:hover{
+            border: 2px solid rgba(255, 255, 255, 0.1);
+          }
+        }
       }
       .light-search-button {
         img {
@@ -181,6 +193,13 @@
         background-color: $color-dark;
         border: 2px solid rgba(255, 255, 255, 0.1);
         border-radius: 28px;
+        &18 {
+          @extend .light-search-button;
+          display: none;
+          @include large-desktops {
+            display: block;
+          }
+        }
       }
       .light-clr-btn {
         width: 105px;
