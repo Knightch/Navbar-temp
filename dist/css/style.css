@@ -900,6 +900,13 @@ button {
   }
 }
 
+@media (min-width: 576px) {
+  .nav3 {
+    position: relative;
+    left: -35px;
+  }
+}
+
 @media (min-width: 1200px) {
   .logo18 {
     left: 0 !important;

@@ -645,6 +645,14 @@
     left: -4px;
   }
 }
+// navaigation3
+.nav3{
+  @include mobile-lg{
+    position: relative;
+    left: -35px;
+  }
+}
+
 // navigation18
 .logo18 {
   @include large-desktops {
