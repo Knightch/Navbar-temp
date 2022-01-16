@@ -15,7 +15,7 @@
     height: 6.25em;
     padding-left: 100px;
     padding-right: 150px;
-    gap: 0px;
+    gap: 20px;
   }
   @include large-desktops {
     width: 90em;
@@ -143,6 +143,10 @@
           font-size: $body-text-size;
           line-height: 24px;
           letter-spacing: -0.36px;
+          @include tablet {
+            font-size: $body-text-size;
+            line-height: 24px;
+          }
           @include large-desktops {
             font-size: $h6;
             line-height: 26px;
@@ -225,9 +229,6 @@
   .header__buttons {
     align-self: center;
     display: flex;
-    @include mobile-lg {
-      gap: 20px;
-    }
     .light-button {
       position: relative;
       width: 89px;
@@ -321,6 +322,13 @@
       border: 2px solid #e7e5ea56;
       background-color: $white;
       left: -15px;
+      @include tablet {
+        width: 89px;
+        height: 48px;
+        border: none;
+        background-color: $white;
+        left: 0;
+      }
       @include large-desktops {
         width: 104px;
         height: 56px;
@@ -331,19 +339,36 @@
       &:nth-child(1) {
         display: none;
         @include mobile-lg {
+          width: 42px;
+          height: 48px;
           display: block;
+        }
+        @include large-desktops {
+          width: 104px;
+          height: 56px;
         }
       }
       &:nth-child(2) {
         display: none;
         @include mobile-lg {
+          width: 42px;
+          height: 48px;
           display: block;
+        }
+        @include large-desktops {
+          width: 104px;
+          height: 56px;
         }
       }
       &:hover {
-        @include large-desktops {
+        @include tablet {
+          width: 89px;
           border-radius: 28px;
           border: 2px solid #e7e5ea56;
+        }
+        @include large-desktops {
+          width: 104px;
+          height: 56px;
         }
       }
     }
@@ -610,14 +635,24 @@
   }
 }
 
-// navogation18
-.logo18{
-  @include large-desktops{
+// navigation2
+.nav2 {
+  @include mobile-lg {
+    position: relative;
+    left: -52px;
+  }
+  @include large-desktops {
+    left: -4px;
+  }
+}
+// navigation18
+.logo18 {
+  @include large-desktops {
     left: 0 !important;
   }
 }
 // navigation 21
-.nav-21{
+.nav-21 {
   display: flex;
   gap: 20px;
 }
