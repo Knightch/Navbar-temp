@@ -10,19 +10,16 @@
   margin-bottom: 100px;
   padding-left: 15px;
   padding-right: 15px;
-  @include mobile-lg {
-    width: 868px;
-  }
   @include tablet {
-    width: 900px;
-    height: 100px;
+    width: 64em;
+    height: 6.25em;
     padding-left: 100px;
     padding-right: 150px;
     gap: 0px;
   }
   @include large-desktops {
-    width: 1440px;
-    height: 100px;
+    width: 90em;
+    height: 6.25em;
     padding-left: 165px;
     padding-right: 165px;
   }

@@ -99,16 +99,10 @@ button {
   padding-right: 15px;
 }
 
-@media (min-width: 576px) {
-  .header__container {
-    width: 868px;
-  }
-}
-
 @media (min-width: 768px) {
   .header__container {
-    width: 900px;
-    height: 100px;
+    width: 64em;
+    height: 6.25em;
     padding-left: 100px;
     padding-right: 150px;
     gap: 0px;
@@ -117,8 +111,8 @@ button {
 
 @media (min-width: 1200px) {
   .header__container {
-    width: 1440px;
-    height: 100px;
+    width: 90em;
+    height: 6.25em;
     padding-left: 165px;
     padding-right: 165px;
   }
