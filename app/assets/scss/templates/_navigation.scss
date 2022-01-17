@@ -46,7 +46,7 @@
     height: 32px;
     align-self: center;
     background-repeat: no-repeat;
-    @include large-desktops {
+    @include tablet {
       background-image: url("/image/svg/navigations/logo.svg");
       left: 15px;
       top: 5px;
