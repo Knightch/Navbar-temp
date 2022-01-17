@@ -150,10 +150,10 @@
         flex-direction: row;
         justify-content: space-between;
         list-style: none;
-        gap: 20px;
-        @include large-desktops {
-          gap: 40px;
-        }
+        gap: 18px;
+      }
+      @include large-desktops {
+        gap: 40px;
       }
       li {
         a {
@@ -695,7 +695,21 @@
   }
 }
 
-// navigation14
+// navigation16
+.header_list16 {
+  li {
+    a {
+      img {
+        @include tablet {
+          display: none;
+        }
+        @include large-desktops {
+          display: block;
+        }
+      }
+    }
+  }
+}
 
 // navigation18
 .logo18 {
