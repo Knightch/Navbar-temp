@@ -57,6 +57,9 @@
   .header__logo-nav-8 {
     @extend .header__logo-nav-7;
     left: 26px;
+    @include tablet {
+      left: 0px;
+    }
   }
   .header__logo-nav-dark {
     @extend .header__logo-nav-7;
@@ -425,11 +428,11 @@
         top: 12px;
         width: 20px;
         height: 20px;
-        @include large-desktops {
+        @include tablet {
           display: none;
         }
       }
-      @include large-desktops {
+      @include tablet {
         display: none;
       }
     }
@@ -584,7 +587,7 @@
 .nav-5_logo {
   img {
     left: -140px !important;
-    @include tablet{
+    @include tablet {
       left: 0 !important;
     }
   }
@@ -660,6 +663,15 @@
   @include mobile-lg {
     position: relative;
     left: -35px;
+  }
+}
+// navigation8
+.nav_btn-8 {
+  @include tablet {
+    width: 65px !important;
+  }
+  @include large-desktops {
+    width: 104px !important;
   }
 }
 

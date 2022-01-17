@@ -161,6 +161,12 @@ button {
   left: 26px;
 }
 
+@media (min-width: 768px) {
+  .header__container .header__logo-nav-8 {
+    left: 0px;
+  }
+}
+
 .header__container .header__logo-nav-dark, .header__container .header__logo-nav-dark14, .header__container .header__logo-nav-dark15, .header__container .header__logo-nav-dark16 {
   left: -36px;
   background-image: url("/image/svg/header/Navigations/mobile-dark-logo.svg");
@@ -652,13 +658,13 @@ button {
   height: 20px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .header__container .header__buttons .search-icon img, .header__container .header__buttons_mobile-view .search-icon img {
     display: none;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .header__container .header__buttons .search-icon, .header__container .header__buttons_mobile-view .search-icon {
     display: none;
   }
@@ -918,6 +924,18 @@ button {
   .nav3 {
     position: relative;
     left: -35px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav_btn-8 {
+    width: 65px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav_btn-8 {
+    width: 104px !important;
   }
 }
 
