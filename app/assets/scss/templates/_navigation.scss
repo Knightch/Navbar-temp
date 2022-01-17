@@ -114,8 +114,11 @@
     }
   }
   .center-logo {
-    @include desktops {
+    @include tablet{
       position: relative;
+      left: 80px;
+    }
+    @include desktops {
       left: 110px;
     }
   }
@@ -615,7 +618,7 @@
   img {
     background-color: $color-dark;
   }
-  @include large-desktops {
+  @include tablet {
     display: none;
   }
 }

@@ -231,9 +231,15 @@ button {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .header__container .center-logo {
     position: relative;
+    left: 80px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__container .center-logo {
     left: 110px;
   }
 }
@@ -872,7 +878,7 @@ button {
   background-color: #391484;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .mobile__search-btn {
     display: none;
   }
