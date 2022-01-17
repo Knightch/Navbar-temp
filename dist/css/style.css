@@ -211,7 +211,8 @@ button {
 
 @media (min-width: 1200px) {
   .header__container .header__logo-nav-dark15 {
-    left: -32%;
+    left: -29%;
+    top: 3px;
   }
 }
 
@@ -883,9 +884,15 @@ button {
     padding-top: 37px;
     padding-bottom: 34px;
     display: flex;
-    gap: 10px;
+    gap: 4px;
     flex-direction: column;
     height: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-9, .nav-12 {
+    gap: 10px;
   }
 }
 
@@ -907,7 +914,7 @@ button {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .nav-12 {
     height: 167px;
   }
@@ -971,6 +978,16 @@ button {
 @media (min-width: 1200px) {
   .nav_btn-8 {
     width: 104px !important;
+  }
+}
+
+.navImg-13 {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .navImg-13 {
+    left: 21px !important;
   }
 }
 

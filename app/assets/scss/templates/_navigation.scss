@@ -90,7 +90,8 @@
         left: -141px;
       }
       @include large-desktops {
-        left: -32%;
+        left: -29%;
+        top: 3px;
       }
     }
     &16 {
@@ -616,9 +617,12 @@
     padding-top: 37px;
     padding-bottom: 34px;
     display: flex;
-    gap: 10px;
+    gap: 4px;
     flex-direction: column;
     height: 150px;
+  }
+  @include large-desktops {
+    gap: 10px;
   }
 }
 
@@ -640,7 +644,7 @@
 // navigation 12
 .nav-12 {
   @extend .nav-9;
-  @include large-desktops {
+  @include tablet {
     height: 167px;
   }
 }
@@ -692,6 +696,13 @@
   }
   @include large-desktops {
     width: 104px !important;
+  }
+}
+// navigation13
+.navImg-13 {
+  position: relative;
+  @include tablet {
+    left: 21px !important;
   }
 }
 
