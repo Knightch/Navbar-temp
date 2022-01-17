@@ -65,8 +65,12 @@
     @extend .header__logo-nav-7;
     left: -36px;
     background-image: url("/image/svg/header/Navigations/mobile-dark-logo.svg");
-    @include large-desktops {
+    @include tablet {
       background-image: url("/image/svg/navigations/light-logo.svg");
+      top: 2px;
+    }
+    @include desktops{
+      top: 0;
     }
     &14 {
       @extend .header__logo-nav-dark;
