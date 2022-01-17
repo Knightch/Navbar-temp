@@ -509,8 +509,8 @@
     order: 2;
   }
 }
-.desktop-view {
-  @include large-desktops {
+.tablet-view {
+  @include tablet {
     display: block;
   }
 }

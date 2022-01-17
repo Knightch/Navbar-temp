@@ -756,8 +756,8 @@ button {
   order: 2;
 }
 
-@media (min-width: 1200px) {
-  .desktop-view {
+@media (min-width: 768px) {
+  .tablet-view {
     display: block;
   }
 }
