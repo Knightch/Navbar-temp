@@ -584,8 +584,8 @@
 .nav-5_logo {
   img {
     left: -140px !important;
-    @include large-desktops {
-      left: 0px !important;
+    @include tablet{
+      left: 0 !important;
     }
   }
 }

@@ -837,9 +837,9 @@ button {
   left: -140px !important;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .nav-5_logo img {
-    left: 0px !important;
+    left: 0 !important;
   }
 }
 
