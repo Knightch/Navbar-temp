@@ -542,8 +542,18 @@
 
 // navigation 4
 .header__buttons {
-  .nav-4:nth-child(2) {
-    display: block !important;
+  .nav-4 {
+    @include tablet {
+      width: 89px !important;
+      height: 48px;
+    }
+    @include large-desktops {
+      width: 104px !important;
+      height: 56px;
+    }
+    &:nth-child(2) {
+      display: block !important;
+    }
   }
 }
 .nav-hamburger-4 {
@@ -646,8 +656,8 @@
   }
 }
 // navaigation3
-.nav3{
-  @include mobile-lg{
+.nav3 {
+  @include mobile-lg {
     position: relative;
     left: -35px;
   }

@@ -788,6 +788,20 @@ button {
   left: 4px;
 }
 
+@media (min-width: 768px) {
+  .header__buttons .nav-4, .header__container .header__buttons_mobile-view .nav-4 {
+    width: 89px !important;
+    height: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__buttons .nav-4, .header__container .header__buttons_mobile-view .nav-4 {
+    width: 104px !important;
+    height: 56px;
+  }
+}
+
 .header__buttons .nav-4:nth-child(2), .header__container .header__buttons_mobile-view .nav-4:nth-child(2) {
   display: block !important;
 }
