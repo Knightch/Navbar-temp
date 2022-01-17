@@ -346,7 +346,7 @@ button {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .header__container .header__list .button-list .light-border-button17 {
     display: block;
   }
@@ -358,7 +358,7 @@ button {
   border: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .header__container .header__list .button-list .light-border-button18 {
     display: none;
   }
@@ -386,7 +386,7 @@ button {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .header__container .header__list .button-list .light-search-button18 {
     display: block;
   }
@@ -986,7 +986,7 @@ button {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .logo18 {
     left: 0 !important;
   }
