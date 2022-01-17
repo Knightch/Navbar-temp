@@ -176,6 +176,8 @@ button {
   .header__container .header__logo-nav-dark, .header__container .header__logo-nav-dark14, .header__container .header__logo-nav-dark15, .header__container .header__logo-nav-dark16 {
     background-image: url("/image/svg/navigations/light-logo.svg");
     top: 2px;
+    width: 120px;
+    height: 30px;
   }
 }
 
@@ -185,8 +187,16 @@ button {
   }
 }
 
-.header__container .header__logo-nav-dark14 {
-  left: -75px;
+@media (min-width: 768px) {
+  .header__container .header__logo-nav-dark14 {
+    left: -15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__container .header__logo-nav-dark14 {
+    left: 17px;
+  }
 }
 
 .header__container .header__logo-nav-dark15 {
@@ -904,6 +914,12 @@ button {
   border-radius: 28px;
   background-color: #391484;
   border: 1px solid rgba(255, 255, 255, 0.274);
+}
+
+@media (min-width: 768px) {
+  .dark-search__btn, .dark-search__btn16 {
+    display: none;
+  }
 }
 
 .dark-search__btn16 {

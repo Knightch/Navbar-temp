@@ -68,13 +68,20 @@
     @include tablet {
       background-image: url("/image/svg/navigations/light-logo.svg");
       top: 2px;
+      width: 120px;
+      height: 30px;
     }
-    @include desktops{
+    @include desktops {
       top: 0;
     }
     &14 {
       @extend .header__logo-nav-dark;
-      left: -75px;
+      @include tablet {
+        left: -15px;
+      }
+      @include large-desktops {
+        left: 17px;
+      }
     }
     &15 {
       @extend .header__logo-nav-dark;
@@ -118,7 +125,7 @@
     }
   }
   .center-logo {
-    @include tablet{
+    @include tablet {
       position: relative;
       left: 80px;
     }
@@ -643,6 +650,9 @@
   border-radius: 28px;
   background-color: $color-dark;
   border: 1px solid rgba(255, 255, 255, 0.274);
+  @include tablet {
+    display: none;
+  }
   &16 {
     @extend .dark-search__btn;
     border: none;
@@ -681,6 +691,8 @@
     width: 104px !important;
   }
 }
+
+// navigation14
 
 // navigation18
 .logo18 {
