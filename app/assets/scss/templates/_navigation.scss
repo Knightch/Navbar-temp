@@ -86,6 +86,9 @@
     &15 {
       @extend .header__logo-nav-dark;
       left: -8%;
+      @include tablet {
+        left: -141px;
+      }
       @include large-desktops {
         left: -32%;
       }
@@ -462,7 +465,7 @@
       }
       &__dark {
         display: none;
-        @include large-desktops {
+        @include tablet {
           @extend .search-button;
           display: block;
           background-color: $color-dark;
