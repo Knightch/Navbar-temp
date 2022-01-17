@@ -849,7 +849,7 @@ button {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .nav-9, .nav-12 {
     padding-top: 37px;
     padding-bottom: 34px;

@@ -595,7 +595,7 @@
 
 // navigation 9
 .nav-9 {
-  @include desktops {
+  @include tablet {
     padding-top: 37px;
     padding-bottom: 34px;
     display: flex;
