@@ -85,6 +85,116 @@ button {
   }
 }
 
+.footer_section {
+  margin: auto;
+  width: 375px;
+  height: 321px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 51px;
+  padding-left: 15px;
+  background-color: #fff;
+}
+
+@media (min-width: 576px) {
+  .footer_section {
+    width: 64em;
+    height: 15.0625em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer_section {
+    width: 90em;
+  }
+}
+
+.footer_section-head {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_section-head_title {
+  order: 2;
+}
+
+.footer_section-head_title .list {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.footer_section-head_title .list .item a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.35555556416511536px;
+  text-align: left;
+  color: #000;
+}
+
+.footer_section-head_logo {
+  order: 1;
+  background-image: url("/image/svg/navigations/Logo.svg");
+  width: 110px;
+  height: 25px;
+  background-repeat: no-repeat;
+  margin-bottom: 51px;
+}
+
+.footer_section-head_contact {
+  order: 3;
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+}
+
+.footer_section-head_contact a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.30000001192092896px;
+  text-align: left;
+  color: #000;
+}
+
+.footer_section-head_contact .social_icon {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.footer_section-head_contact .social_icon img {
+  width: 24px;
+  height: 20px;
+}
+
+.footer_section-separator {
+  margin-bottom: 32px;
+  margin-top: 48px;
+  width: 345px;
+  height: 1px;
+  background-color: #594d6d;
+}
+
+.footer_section-bottom .copyright_text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.30000001192092896px;
+  color: #594d6d;
+}
+
 .header__container {
   margin: auto;
   background-color: #fff;
