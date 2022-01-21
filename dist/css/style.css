@@ -98,8 +98,10 @@ button {
 
 @media (min-width: 576px) {
   .footer_section {
-    width: 64em;
-    height: 15.0625em;
+    text-align: center;
+    width: 100%;
+    height: 16.875em;
+    padding-left: 3.75em;
   }
 }
 
@@ -111,11 +113,25 @@ button {
 
 .footer_section-head {
   display: flex;
+  justify-content: center;
   flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  .footer_section-head {
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 
 .footer_section-head_title {
   order: 2;
+}
+
+@media (min-width: 576px) {
+  .footer_section-head_title {
+    order: 1;
+  }
 }
 
 .footer_section-head_title .list {
@@ -139,6 +155,13 @@ button {
   color: #000;
 }
 
+@media (min-width: 576px) {
+  .footer_section-head_title .list .item a {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
 .footer_section-head_logo {
   order: 1;
   background-image: url("/image/svg/navigations/Logo.svg");
@@ -146,6 +169,18 @@ button {
   height: 25px;
   background-repeat: no-repeat;
   margin-bottom: 51px;
+}
+
+@media (min-width: 576px) {
+  .footer_section-head_logo {
+    position: relative;
+    left: -30px;
+    top: -3px;
+    order: 2;
+    background-image: url("/image/svg/navigations/Logo-mobile.svg");
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .footer_section-head_contact {
@@ -178,14 +213,25 @@ button {
 }
 
 .footer_section-separator {
+  margin: auto;
   margin-bottom: 32px;
   margin-top: 48px;
   width: 345px;
   height: 1px;
-  background-color: #594d6d;
+  background-color: #e7e5ea;
+}
+
+@media (min-width: 576px) {
+  .footer_section-separator {
+    width: 45.135em;
+    margin-top: 0px;
+    margin-bottom: 32px;
+  }
 }
 
 .footer_section-bottom .copyright_text {
+  position: relative;
+  margin: auto;
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -193,6 +239,20 @@ button {
   line-height: 24px;
   letter-spacing: -0.30000001192092896px;
   color: #594d6d;
+}
+
+@media (min-width: 576px) {
+  .footer_section-bottom .copyright_text {
+    left: 0;
+    width: 21.875em;
+    height: 1.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer_section-bottom .copyright_text {
+    left: 0;
+  }
 }
 
 .header__container {

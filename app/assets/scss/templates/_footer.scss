@@ -8,17 +8,28 @@
   padding-left: 15px;
   background-color: $white;
   @include mobile-lg {
-    width: 64em;
-    height: 15.0625em;
+    text-align: center;
+    width: 100%;
+    height: 16.875em;
+    padding-left: 3.75em;
   }
+ 
   @include large-desktops {
     width: 90em;
   }
   &-head {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    @include mobile-lg {
+      flex-direction: row;
+      gap: 50px;
+    }
     &_title {
       order: 2;
+      @include mobile-lg {
+        order: 1;
+      }
       .list {
         text-decoration: none;
         list-style: none;
@@ -37,6 +48,10 @@
             letter-spacing: -0.35555556416511536px;
             text-align: left;
             color: $black;
+            @include mobile-lg {
+              font-size: $body-text-size;
+              line-height: 24px;
+            }
           }
         }
       }
@@ -48,6 +63,15 @@
       height: 25px;
       background-repeat: no-repeat;
       margin-bottom: 51px;
+      @include mobile-lg {
+        position: relative;
+        left: -30px;
+        top: -3px;
+        order: 2;
+        background-image: url("/image/svg/navigations/Logo-mobile.svg");
+        width: 35px;
+        height: 35px;
+      }
     }
     &_contact {
       order: 3;
@@ -77,15 +101,22 @@
     }
   }
   &-separator {
+    margin: auto;
     margin-bottom: 32px;
     margin-top: 48px;
     width: 345px;
     height: 1px;
-    background-color: $color-muted;
+    background-color: $color-light;
+    @include mobile-lg {
+      width: 45.135em;
+      margin-top: 0px;
+      margin-bottom: 32px;
+    }
   }
   &-bottom {
     .copyright_text {
-      //styleName: Paragraph/03;
+      position: relative;
+      margin: auto;
       font-family: $font-primary;
       font-size: $body-text-size;
       font-style: normal;
@@ -93,6 +124,14 @@
       line-height: 24px;
       letter-spacing: -0.30000001192092896px;
       color: $color-muted;
+      @include mobile-lg {
+        left: 0;
+        width: 21.875em;
+        height: 1.5em;
+      }
+      @include large-desktops {
+        left: 0;
+      }
     }
   }
 }
