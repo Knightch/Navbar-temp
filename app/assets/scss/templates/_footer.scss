@@ -5,17 +5,20 @@
   display: flex;
   flex-direction: column;
   padding-top: 51px;
+  margin-bottom: 100px;
   padding-left: 15px;
   background-color: $white;
   @include mobile-lg {
     text-align: center;
     width: 100%;
+    height: 241px;
     height: 16.875em;
     padding-left: 3.75em;
   }
- 
+
   @include large-desktops {
     width: 90em;
+    height: 291px;
   }
   &-head {
     display: flex;
@@ -132,6 +135,58 @@
       @include large-desktops {
         left: 0;
       }
+    }
+  }
+}
+
+// footer 2
+.footer_section-f2 {
+  @extend .footer_section;
+  height: 224px;
+  flex-direction: column;
+  @include mobile-lg {
+    justify-content: center;
+    gap: 58px;
+    padding-top: 80px;
+    flex-direction: row;
+    height: 186px;
+  }
+  @include large-desktops {
+    justify-content: center;
+    gap: 195px;
+  }
+  .social_icon-f2 {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 40px;
+    @include large-desktops {
+      gap: 40px;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .item {
+    a {
+      @include large-desktops {
+        font-size: $h6 !important;
+      }
+    }
+  }
+  .copyright_text-f2 {
+    order: 3;
+    font-family: $font-primary;
+    font-size: $body-text-size;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.35555556416511536px;
+    text-align: left;
+    color: $black;
+    @include large-desktops {
+      font-size: $h6;
     }
   }
 }
