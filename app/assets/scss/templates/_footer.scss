@@ -1,3 +1,9 @@
+ul {
+  list-style: none;
+  a {
+    color: $black;
+  }
+}
 .footer_section {
   margin: auto;
   width: 375px;
@@ -74,6 +80,13 @@
         background-image: url("/image/svg/navigations/Logo-mobile.svg");
         width: 35px;
         height: 35px;
+      }
+      &-f3 {
+        @extend .footer_section-head_logo;
+        order: 1;
+        background-image: url("/image/svg/navigations/Logo.svg");
+        width: 108px;
+        height: 25px;
       }
     }
     &_contact {
@@ -187,6 +200,100 @@
     color: $black;
     @include large-desktops {
       font-size: $h6;
+    }
+  }
+}
+
+// footer 3
+.footer_section-f3 {
+  @extend .footer_section;
+  padding-left: 20px;
+  width: 375px;
+  height: 661px;
+  @include large-desktops {
+    width: 90em;
+    height: 427px;
+  }
+  .footer_section-head {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    @include large-desktops {
+      flex-direction: row;
+      margin: 0 auto;
+      width: 1110px;
+      gap: 278px;
+    }
+    &_title-f3 {
+      order: 2;
+      .list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-inline-start: 0px;
+        gap: 32px;
+        @include large-desktops {
+          flex-wrap: nowrap;
+        }
+        .items {
+          width: 158px;
+          font-family: $font-primary;
+          font-size: $h6;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 26px;
+          letter-spacing: -0.35555556416511536px;
+          text-align: left;
+          color: $black;
+          padding-inline-start: 0px;
+          .sub-items {
+            a {
+              width: 158px !important;
+              font-family: $font-primary;
+              font-size: $body-text-size;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 24px;
+              letter-spacing: -0.30000001192092896px;
+              color: #594d6d;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_section-separator-f3 {
+    @extend .footer_section-separator;
+    width: 345px;
+    @include large-desktops {
+      margin-top: 80px;
+      width: 1110px;
+    }
+  }
+  .footer_section-bottom-f3 {
+    @extend .footer_section-bottom;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    @include large-desktops {
+      margin: 0 auto;
+      flex-direction: row;
+      width: 1110px;
+      gap: 624px;
+    }
+    .social_icon-f3 {
+      order: 2;
+      display: flex;
+      flex-direction: row;
+      width: 24px;
+      height: 20px;
+      gap: 32px;
+      @include large-desktops {
+      }
+    }
+    .copyright_text-f3 {
+      @extend .copyright_text;
+      margin: 0;
     }
   }
 }
