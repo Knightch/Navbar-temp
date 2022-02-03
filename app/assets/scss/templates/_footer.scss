@@ -334,6 +334,9 @@ ul {
     height: 152px;
     padding-top: 60px;
   }
+  @include desktops{
+    width: 90em;
+  }
   .footer__logo {
     background-image: url("/image/svg/navigations/Logo.svg");
     background-repeat: no-repeat;
@@ -350,6 +353,9 @@ ul {
     .list {
       flex-wrap: wrap;
       row-gap: 8px;
+      @include desktops{
+        gap: 40px;
+      }
       .item {
         a {
           font-size: 14px;

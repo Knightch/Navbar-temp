@@ -501,6 +501,12 @@ ul a {
   }
 }
 
+@media (min-width: 992px) {
+  .footer_section-f4 {
+    width: 90em;
+  }
+}
+
 .footer_section-f4 .footer__logo {
   background-image: url("/image/svg/navigations/Logo.svg");
   background-repeat: no-repeat;
@@ -523,6 +529,12 @@ ul a {
 .footer_section-f4 .footer_section-head_title .list {
   flex-wrap: wrap;
   row-gap: 8px;
+}
+
+@media (min-width: 992px) {
+  .footer_section-f4 .footer_section-head_title .list {
+    gap: 40px;
+  }
 }
 
 .footer_section-f4 .footer_section-head_title .list .item a {
