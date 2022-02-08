@@ -329,12 +329,12 @@ ul {
   @extend .footer_section-f2;
   width: 375px;
   height: 295px;
-  @include mobile-lg{
+  @include mobile-lg {
     width: 100%;
     height: 152px;
     padding-top: 60px;
   }
-  @include desktops{
+  @include desktops {
     width: 90em;
   }
   .footer__logo {
@@ -343,7 +343,7 @@ ul {
     width: 200px;
     height: 100px;
     margin-bottom: 43px;
-    @include mobile-lg{
+    @include mobile-lg {
       background-image: url("/image/svg/navigations/Logo-mobile.svg");
       width: 40px;
     }
@@ -353,7 +353,7 @@ ul {
     .list {
       flex-wrap: wrap;
       row-gap: 8px;
-      @include desktops{
+      @include desktops {
         gap: 40px;
       }
       .item {
@@ -367,5 +367,168 @@ ul {
   .social_icon-f4 {
     @extend .social_icon-f2;
     order: 3;
+  }
+}
+
+// footer-5
+.footer-5 {
+  width: 375px;
+  height: 717px;
+  margin: auto;
+  padding-left: 10px;
+  @include mobile-lg {
+    width: 1024px;
+    height: 581px;
+  }
+  @include desktops {
+    width: 1260px;
+    height: 451px;
+  }
+}
+.head_f5 {
+  @include desktops {
+    margin: auto 89px !important;
+    width: 1110px !important;
+  }
+}
+.list_f5 {
+  gap: 30px !important;
+}
+.item-f5 {
+  display: flex;
+  width: 192px !important;
+  flex-direction: column;
+  gap: 12px;
+  @include desktops{
+    width: 400px !important;
+  }
+  .subscribe_section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    @include desktops {
+      flex-direction: row;
+      gap: 25px;
+    }
+    .email_input {
+      display: flex;
+      width: 345px;
+      height: 56px;
+      border-radius: 28px;
+      background-color: #e7e5ea;
+      flex-direction: row;
+      padding-top: 15px;
+      padding-left: 24px;
+      gap: 24px;
+      @include desktops {
+        width: 255px;
+        height: 56px;
+      }
+      .email-icon {
+        background-image: url("/image/svg/Footers/icon.svg");
+        width: 24px;
+        height: 24px;
+      }
+      p {
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.36000001430511475px;
+        text-align: left;
+        color: #12022f;
+        opacity: 0.5;
+      }
+    }
+    .subscribe_btn {
+      .btn-sub {
+        width: 345px;
+        height: 56px;
+        border-radius: 28px;
+        background-color: #ffdda9;
+        @include desktops {
+          width: 160px;
+        }
+      }
+    }
+  }
+  .follow_section {
+    display: flex;
+    flex-direction: row;
+    gap: 41px;
+    padding-top: 34px;
+    .social_icon-f5 {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      .facebook,
+      .twitter {
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .follow {
+      p {
+        width: 65px;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.30000001192092896px;
+        text-align: left;
+      }
+    }
+  }
+}
+.footer_section-separator-f5 {
+  margin: auto;
+  width: 345px;
+  height: 1px;
+  background-color: #e7e5ea;
+  margin-top: 48px;
+  @include mobile-lg {
+    margin: auto 89px;
+    width: 690px;
+  }
+  @include desktops {
+    width: 1110px;
+  }
+}
+.footer_section-bottom-f5 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 32px;
+  @include mobile-lg {
+    width: 844px;
+    flex-direction: row;
+    gap: 120px;
+  }
+  @include desktops{
+    margin-top: 12px;
+    margin-left: 89px;
+    padding-top: 0;
+    width: 1110px;
+    gap: 400px;
+  }
+  .terms_condition {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    p {
+      font-family: DM Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: -0.30000001192092896px;
+      text-align: left;
+      color: $black;
+    }
   }
 }
