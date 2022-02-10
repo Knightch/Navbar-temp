@@ -376,6 +376,7 @@ ul {
   height: 717px;
   margin: auto;
   padding-left: 10px;
+  margin-bottom: 100px;
   @include mobile-lg {
     width: 1024px;
     height: 581px;
@@ -399,7 +400,7 @@ ul {
   width: 192px !important;
   flex-direction: column;
   gap: 12px;
-  @include desktops{
+  @include desktops {
     width: 400px !important;
   }
   .subscribe_section {
@@ -509,7 +510,7 @@ ul {
     flex-direction: row;
     gap: 120px;
   }
-  @include desktops{
+  @include desktops {
     margin-top: 12px;
     margin-left: 89px;
     padding-top: 0;
@@ -529,6 +530,76 @@ ul {
       letter-spacing: -0.30000001192092896px;
       text-align: left;
       color: $black;
+    }
+  }
+}
+
+// footer 6
+.footer-6 {
+  height: 505px;
+  padding-left: 10px;
+  @include mobile-lg {
+    height: 361px;
+  }
+  .footer_section-head-f6{
+    @extend .footer_section-head;
+    @include mobile-lg{
+      width: 45em;
+    }
+    @include desktops{
+      width: 90em;
+      gap: 500px;
+    }
+  }
+}
+.footer_section-bottom-f6 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  @include mobile-lg{
+    flex-direction: row;
+    gap: 162px;
+    margin-left: 45px;
+  }
+  @include desktops{
+    gap: 582px;
+  }
+  .menu {
+    .list {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding-inline-start: 0px;
+      .item {
+        a {
+          font-family: DM Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: -0.30000001192092896px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+.footer_section-separator-f6{
+  @extend .footer_section-separator-f5;
+  @include mobile-lg{
+    margin: auto 45px;
+  }
+}
+.social_icons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  .twitter,
+  .facebook {
+    img {
+      width: 24px;
+      height: 24px;
     }
   }
 }
